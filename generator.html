@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Assembler</title>
+    <style>
+        body{
+            background-color: rgb(39, 39, 44);
+            color: orange;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12px;
+        }
+        .bot{
+        }
+        .border{
+            border: 8px solid orange;
+        }
+        .piece{
+            position: absolute;
+            top: 0;
+            left: calc(50% - 128px);
+            width: 256px;
+            image-rendering: pixelated;
+
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+</head>
+
+<body>
+    <div id="bots"></div>
+    <script src="./generator.js"></script>
+</body>
+</html>
